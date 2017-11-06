@@ -1,0 +1,135 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style:none;
+	text-decoration:none;
+	box-sizing:border-box;
+}
+
+html,body{
+	width:100%;
+	height: 100%;
+	font-size: 0.32rem;
+	background: #EEEEEE;
+}
+
+.wrap{
+	width:100%;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+}
+.header{
+	width: 100%;
+	height: 0.9rem;
+	padding:0 5%;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.02rem solid #ccc;
+	background: #fff;
+}
+.ti{
+	font-size: 0.4rem;
+	color:#DF3348;
+	font-weight: 700;
+}
+.header div{
+	display: flex;
+	justify-content: space-between;
+}
+.header div dl{
+	text-align: center;
+	margin-left: 0.2rem;
+}
+.section{
+	width:100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	flex-grow: 1;
+}
+
+.section .top{
+	width:100%;
+	height:2.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5%;
+	margin-top: 0.1rem;
+	background: #fff;
+}
+.section .top div{
+	
+	width:25%;
+	height:2.4rem;
+	padding: 1% 1%;
+	
+}
+.section .top div dl{
+	width:100%;
+	height:100%;
+	background: #F8F8F8;
+	text-align: center;
+	padding: 5% 0;
+}
+.section .top div dl .iconfont {
+	font-size: 0.8rem;
+	color:#DF3448;
+}
+.section .main{
+	width:100%;
+	margin-top: 0.3rem;
+}
+.section .main .ico{
+	width:100%;
+	height:1.8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+.section .main .ico dl{
+	width:25%;
+	height:1.8rem;
+	text-align: center;
+	line-height: 0.9rem;
+	border-right:0.01rem solid #ccc;
+	border-top:0.01rem solid #ccc;
+}
+.section .main .pic{
+	width:50%;
+	height:1.8rem;
+	padding: 2%;
+	border-right:0.01rem solid #ccc;
+	border-top:0.01rem solid #ccc;
+}
+.section .main .pic img{
+	width:100%;
+	height:100%;
+}
+.section .photo{
+	width:100%;
+	height:1.6rem;
+	padding: 0 5%;
+	margin-top: 0.2rem;
+}
+.section .photo img{
+	width:100%;
+	height:100%;
+}
+.footer{
+	width: 100%;
+	height: 0.9rem;
+	padding:0 5%;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 0.02rem solid #ccc;
+}
+.footer dl{
+	width:25%;
+	text-align: center;
+}
