@@ -11,16 +11,23 @@ var gulp = require('gulp'),
 	url = require('url');
 
 //压缩html
-
+gulp.task('yshtml', function(){
+	gulp.src('./index.html').pipe(htmlmin({
+		
+	}))
+	.pipe(gulp.dest('html'))
+})
 //压缩css
 gulp.task('yscss', function(){
 	gulp.src('./*.css').pipe(cssmin()).pipe(gulp.dest('dist/static/css'))
 })
 //压缩js
-gulp.task('yscss', function(){
+gulp.task('ysjs', function(){
 	gulp.src('./*.js').pipe(jsmin()).pipe(gulp.dest('dist/static/js'))
 })
-	
+
+
+
 gulp.task('webserver', function(){
 	gulp.src('.').pipe(webserver({
 		port : 8080,
@@ -40,9 +47,11 @@ gulp.task('webserver', function(){
 	}))
 })
 
+gulp.task('default', ['yshtml','yscss','ysjs','webserver'])
+
 var json = [
 	{
-		
+		"code" : "1"
 	}
 
 
